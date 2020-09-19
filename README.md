@@ -1,6 +1,7 @@
 # Description
 Chatrooms - Django Project
 - Develop an asynchronous chatroom service using Django and the channels package
+- Deploy a simple chat app to Heroku with Daphne
 
 ----
 ### Specifications
@@ -11,6 +12,8 @@ Chatrooms - Django Project
 - Record/save conversations
 - Delete/edit messages
 - Working asynchronous web chat client with Django
+- Basic deploy wit Heroku (http only)
+- Add configuration for Daphne/Channels/Redis
 
 
 ### Synchronous Vs Asynchronous
