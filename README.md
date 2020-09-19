@@ -7,6 +7,9 @@ Chatrooms - Django Project
 # Demo
 - Django Application - http://dchat-bk.herokuapp.com/chat/{chatroom-name}/
 
+## Screenshots
+
+
 ## Specifications
 - Theory - Websockets, ASGI, Channels
 - Real live chat (multiple users)

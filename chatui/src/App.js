@@ -50,7 +50,8 @@ class App extends Component {
     room: 'general',
   }
 
-  client = new W3CWebSocket('ws://127.0.0.1:8000/ws/chat/' + this.state.room + '/');
+//   client = new W3CWebSocket('ws://127.0.0.1:8000/ws/chat/' + this.state.room + '/');
+client = new W3CWebSocket('ws://dchat-bk.herokuapp.com/ws/chat/' + this.state.room + '/');
 
   onButtonClicked = (e) => {
       this.client.send(JSON.stringify({
@@ -100,11 +101,13 @@ class App extends Component {
                                         <Avatar className={classes.avatar}>
                                             R
                                         </Avatar>
+                                        
                                     }
                                     title={message.username}
                                     subheader={message.msg}
                                     />
                                 </Card>
+                                {/* <p>{message.username}: {message.msg}</p> */}
                                 </>
                             )}
                         </Paper>
