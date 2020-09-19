@@ -51,18 +51,20 @@ Chatrooms - Django Project
 
 ---
 ## Heroku Configurations
+
 ### Set Github Repository for Heroku Git Also
 `heroku git:remote -a dchat-bk`
 
 ### Clone the repository
 Use Git to clone dchat-bk's source code to your local machine.
-
 `$ heroku git:clone -a dchat-bk`
 `$ cd dchat-bk`
 
 ### Deploy your changes to Heroku
-
 `$ git push heroku master`
+
+### Check Heroku Logs
+`heroku logs --app <application name> -t`
 
 ---
 ## Network Communication
