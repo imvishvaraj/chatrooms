@@ -4,7 +4,7 @@ Chatrooms - Django Project
 - Deploy a simple chat app to Heroku with Daphne
 
 ----
-### Specifications
+## Specifications
 - Theory - Websockets, ASGI, Channels
 - Real live chat (multiple users)
 - User Registration
@@ -15,7 +15,8 @@ Chatrooms - Django Project
 - Basic deploy wit Heroku (http only)
 - Add configuration for Daphne/Channels/Redis
 
-
+---
+## Notes
 ### Synchronous Vs Asynchronous
 - Django/Webpages mostly synchronous
     - Web Synchronous request (HTTP request)
@@ -48,6 +49,23 @@ Chatrooms - Django Project
 - Consumer (view)
 - Template configuration handle WS
 
+---
+## Heroku Configurations
+### Set Github Repository for Heroku Git Also
+`heroku git:remote -a dchat-bk`
+
+### Clone the repository
+Use Git to clone dchat-bk's source code to your local machine.
+
+`$ heroku git:clone -a dchat-bk`
+`$ cd dchat-bk`
+
+### Deploy your changes to Heroku
+
+`$ git push heroku master`
+
+---
+## Network Communication
 ### Communication over network
 User A --HTTP Request--> WSGI (Apache/Nginx) --> Django Views
 
