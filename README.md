@@ -2,6 +2,7 @@
 Chatrooms - Django Project
 - Develop an asynchronous chatroom service using Django and the channels package
 - Deploy a simple chat app to Heroku with Daphne
+- Develop a React chat application for integration with Django/channels Heroku deployment
 
 # Demo
 - Django Application - http://dchat-bk.herokuapp.com/chat/{chatroom-name}/
@@ -14,8 +15,11 @@ Chatrooms - Django Project
 - Record/save conversations
 - Delete/edit messages
 - Working asynchronous web chat client with Django
-- Basic deploy wit Heroku (http only)
 - Add configuration for Daphne/Channels/Redis
+- Basic deploy wit Heroku (http only)
+- Build a proof of concept React app
+- Deploy React to Heroku
+- Deploy Django Channels Chat Server and Redis to Heroku
 
 
 ## Notes
@@ -67,6 +71,11 @@ Use Git to clone dchat-bk's source code to your local machine.
 
 ### Check Heroku Logs
 `heroku logs --app <application name> -t`
+
+
+## ReactJS Application Setup
+- `npx create-react-app chatui`
+- Install material-ui - `npm install @material-ui/core`
 
 
 ## Network Communication

@@ -6,6 +6,29 @@ __pycache__/
 # C extensions
 *.so
 
+# Excluding nodejs modules
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production nodejs
+/build
+
+# misc nodejs
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 # Distribution / packaging
 .idea/
 .Python
