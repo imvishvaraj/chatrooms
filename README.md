@@ -3,7 +3,9 @@ Chatrooms - Django Project
 - Develop an asynchronous chatroom service using Django and the channels package
 - Deploy a simple chat app to Heroku with Daphne
 
-----
+# Demo
+- Django Application - http://dchat-bk.herokuapp.com/chat/{chatroom-name}/
+
 ## Specifications
 - Theory - Websockets, ASGI, Channels
 - Real live chat (multiple users)
@@ -15,7 +17,7 @@ Chatrooms - Django Project
 - Basic deploy wit Heroku (http only)
 - Add configuration for Daphne/Channels/Redis
 
----
+
 ## Notes
 ### Synchronous Vs Asynchronous
 - Django/Webpages mostly synchronous
@@ -49,7 +51,7 @@ Chatrooms - Django Project
 - Consumer (view)
 - Template configuration handle WS
 
----
+
 ## Heroku Configurations
 
 ### Set Github Repository for Heroku Git Also
@@ -66,7 +68,7 @@ Use Git to clone dchat-bk's source code to your local machine.
 ### Check Heroku Logs
 `heroku logs --app <application name> -t`
 
----
+
 ## Network Communication
 ### Communication over network
 User A --HTTP Request--> WSGI (Apache/Nginx) --> Django Views
@@ -74,3 +76,9 @@ User A --HTTP Request--> WSGI (Apache/Nginx) --> Django Views
 User A --WebSocket's--> ASGI (Daphine) --> Consumer
 
 User A --> ASGI Server --> Consumer (View)
+
+## References
+- https://channels.readthedocs.io/
+- https://channels.readthedocs.io/en/latest/deploying.html
+- https://docs.djangoproject.com/en/3.1/howto/deployment/asgi/daphne/
+- https://devcenter.heroku.com/articles/heroku-redis
