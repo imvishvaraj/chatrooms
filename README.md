@@ -8,6 +8,13 @@ Chatrooms - Django Project
 - Django Application - http://dchat-bk.herokuapp.com/chat/{chatroom-name}/
 
 ## Screenshots
+<table>
+    <tr>
+    <td><img src="./screenshots/first_page_chatrooms.png" alt="login" width="400" height="400"/></td>
+    <td> </td>
+    <td><img src="./screenshots/chat_window_chatrooms.png" alt="login" width="400" height="400"/></td>
+    </tr>
+</table>
 
 
 ## Specifications
