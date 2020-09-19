@@ -8,7 +8,7 @@ __pycache__/
 
 # Excluding nodejs modules
 # dependencies
-/node_modules
+chatui/node_modules/
 /.pnp
 .pnp.js
 
